@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - todoapp-ychen349
+name: Build and deploy Python app to Azure Web App - lxr429-techin510-lab3
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_FD00C3143EBE46B48CD8D81C69EC41FF }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3E322EA900FE4262B52395D0D66FF7BD }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4428D085716049D9B6768AC191AD05B4 }}
+          client-id: ${{291f6aa3-c34c-49da-86e7-10cc5d76f21d}}
+          tenant-id: ${{ f6b6dd5b-f02f-441a-99a0-162ac5060bd2 }}
+          subscription-id: ${{f14d92a9-89d6-4203-b347-809649be0351}}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'todoapp-ychen349'
+          app-name: 'lxr99-techin510-lab3'
           slot-name: 'Production'
           
